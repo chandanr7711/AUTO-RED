@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+autored.db
+reports/generated/
+.env

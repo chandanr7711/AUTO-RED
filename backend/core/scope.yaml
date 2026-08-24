@@ -1,0 +1,30 @@
+# AutoRed Scope File
+# ---------------------------------------------------------
+# Every target scanned by AutoRed MUST appear here first.
+# This is the authorization boundary for the entire tool —
+# add an entry ONLY for systems you own or have explicit
+# written permission to test (e.g. a CTF box, your own lab,
+# a client engagement with a signed scope document).
+#
+# domains: exact hostnames or subdomain wildcards (*.example.com)
+# ip_ranges: CIDR notation
+# owner: who authorized this scope (for the audit trail)
+# authorized_until: ISO date - entries expire automatically
+# ---------------------------------------------------------
+
+targets:
+  - domains:
+      - "localhost"
+      - "127.0.0.1"
+    ip_ranges:
+      - "127.0.0.1/32"
+    owner: "self (local lab testing)"
+    authorized_until: "2027-01-01"
+
+  # Example entry for a real engagement:
+  # - domains:
+  #     - "*.example-client.com"
+  #   ip_ranges:
+  #     - "203.0.113.0/24"
+  #   owner: "Jane Doe, CISO - signed SOW #2026-014"
+  #   authorized_until: "2026-12-31"
