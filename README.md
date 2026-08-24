@@ -177,23 +177,6 @@ curl -X POST http://localhost:8000/scan \
 
 </details>
 
-<br/>
-
-## 📸 Screenshots
-
-<div align="center">
-<table>
-<tr>
-<td align="center"><em>Streamlit Dashboard</em><br/><img src="docs/screenshot-dashboard.png" width="380"/></td>
-<td align="center"><em>Generated PDF Report</em><br/><img src="docs/screenshot-report.png" width="380"/></td>
-</tr>
-</table>
-</div>
-
-> Add your own screenshots to a `docs/` folder and update the paths above.
-
-<br/>
-
 ## 📁 Project Structure
 
 ```
